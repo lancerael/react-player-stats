@@ -1,0 +1,61 @@
+$base: #f2f5ff;
+$dark: #AAAAAA;
+$light: #F0F0F0;
+
+$base-light: lighten( $base, 25% );
+$base-dark: darken( $base, 25% );
+
+@mixin panel {
+  background-color: $base-light;
+  border: 1px solid $base-dark;
+  box-shadow: 2px 2px 5px $dark;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+body{
+  background-color: $light;
+  font-family: sans-serif;
+}
+
+#rps {
+
+  .rps-container {
+
+
+    .rps-row {
+      background: linear-gradient($base, $base-light);
+      display: flex;
+      margin-bottom: 10px;
+      max-width: 350px;
+      @include panel;
+
+      .rps-player {
+        @include panel;
+        padding-bottom: 1px;
+      }
+
+      .rps-stats {
+        margin-left: 10px;
+
+        img {
+          margin-top: 2px;
+          margin-right: 5px;
+        }
+      }
+
+      .rps-data ul {
+        list-style: none;
+        padding-left: 0;
+
+        strong {
+          display: inline-block;
+          width: 60px;
+        }
+      }
+
+    }
+
+  }
+
+}
