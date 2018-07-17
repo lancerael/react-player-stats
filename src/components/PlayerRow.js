@@ -1,26 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import PlayerData from './PlayerData';
 
-class PlayerRow extends Component {
+const PlayerRow = (props) => {
 
-  render() {
-    const player = this.props.player;
+  const player = props.player;
 
-    return (
-      <div className="rps-row">
-        <div className="rps-player">
-          <img src={player.picture}/>
-        </div>
-        <div className="rps-stats">
-          <img src={player.country.picture} width="20px" height="14px" title={player.country.code}/>
-          <strong>{player.firstname} {player.lastname}</strong>
-          <PlayerData data={player.data} />
-        </div>
+  return (
+    <div className="rps-row">
+      <div className="rps-player">
+        <img src={player.picture}/>
       </div>
-    );
-
-  }
+      <div className="rps-stats">
+        <img src={player.country.picture} width="20px" height="14px" title={player.country.code}/>
+        <strong>{player.firstname} {player.lastname}</strong>
+        <PlayerData data={player.data} />
+      </div>
+    </div>
+  );
 
 }
 
