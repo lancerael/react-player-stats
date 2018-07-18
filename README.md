@@ -45,3 +45,4 @@ With more time I would like to add:
 * Loader display
 * Redux state management
 * Enhanced styling
+* Refine structure of components
