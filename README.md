@@ -2,6 +2,10 @@
 
 A simple React app to display player stats.
 
+## Demo
+
+http://dtheia.org/react-player-stats/
+
 ## Installation
 
 Install Node.JS (https://nodejs.org/) and NPM:
@@ -20,7 +24,7 @@ Uses Webpack/Babel with plugins, performs linting on build (watcher)
 
 ```npm run serve```
 
-You can then access the server at http://localhost:8081 which launches the sandbox.
+You can then access the server at http://localhost:8081 which launches the app.
 
 ## PRODUCTION BUILD
 
@@ -40,3 +44,4 @@ With more time I would like to add:
 * Unit tests
 * Loader display
 * Redux state management
+* Enhanced styling
