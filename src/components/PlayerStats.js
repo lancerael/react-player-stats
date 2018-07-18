@@ -20,8 +20,9 @@ class PlayerStats extends Component {
   render() {
     return (
       <div className="rps-container">
-        {this.state.players.map((player, i) =>
-          <PlayerRow key={`player${i}`} player={player}/>
+        {this.state.players
+          .sort((player1, player2) => player1.data.rank - player2.data.rank)
+          .map((player) => <PlayerRow key={player.picture.replace(/\D/g,'')} player={player}/>
         )}
       </div>
     );

@@ -8,20 +8,19 @@ $base-dark: darken( $base, 25% );
 @mixin panel {
   background-color: $base-light;
   border: 1px solid $base-dark;
-  box-shadow: 2px 2px 5px $dark;
+  box-shadow: 2px 2px 2px $dark;
   padding: 5px;
-  border-radius: 3px;
 }
 
 body{
   background-color: $light;
   font-family: sans-serif;
+  font-size: 0.8em;
 }
 
 #rps {
 
   .rps-container {
-
 
     .rps-row {
       background: linear-gradient($base, $base-light);
@@ -37,10 +36,11 @@ body{
 
       .rps-stats {
         margin-left: 10px;
+        padding-top: 2px;
 
         img {
-          margin-top: 2px;
           margin-right: 5px;
+          margin-bottom: -2px;
         }
       }
 

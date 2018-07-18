@@ -1,4 +1,4 @@
-# React Player Stats
+# React Player Stats 1.1.0
 
 A simple React app to display player stats.
 
